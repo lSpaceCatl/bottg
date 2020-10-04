@@ -28,7 +28,7 @@ class DashaMod(loader.Module):
 	async def ddcmd(self, message):
 		""".dd <реплай на сообщение/свой текст>"""
 		
-		ufr = requests.get("https://github.com/LaciaMemeFrame/FTG-Modules/blob/master/open-sans.ttf?raw=true")
+		ufr = requests.get("https://github.com/lSpaceCatl/bottg/blob/main/open-sans.ttf?raw=true")
 		f = ufr.content
 		
 		reply = await message.get_reply_message()
@@ -57,8 +57,8 @@ class DashaMod(loader.Module):
 		imtext = Image.new("RGBA", (w+10, h+10), (0, 0,0,0))
 		draw = ImageDraw.Draw(imtext)
 		draw.multiline_text((10, 10),t,(0,0,0),font=font, align='left')
-		imtext.thumbnail((339, 181))
-		w, h = 339, 181
+		imtext.thumbnail((850, 1200))
+		w, h = 850, 1200
 		img.paste(imtext, (10,10), imtext)
 		out = io.BytesIO()
 		out.name = "dasha.jpg"
