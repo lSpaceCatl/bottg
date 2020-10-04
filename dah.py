@@ -42,7 +42,7 @@ class DashaMod(loader.Module):
 		else:
 			txt = utils.get_args_raw(message)
 		await message.edit("<b>Слышь, ща в суд подам!!!</b>")
-		pic = requests.get("https://github.com/lSpaceCatl/bottg/blob/main/dasha.jpg")
+		pic = requests.get("https://github.com/lSpaceCatl/bottg/blob/main/IMAGE%202020-10-04%2020:33:49.jpg")
 		pic.raw.decode_content = True
 		img = Image.open(io.BytesIO(pic.content)).convert("RGB")
  
