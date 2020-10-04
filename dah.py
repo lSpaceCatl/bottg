@@ -8,9 +8,9 @@ import io
 from textwrap import wrap
 
 def register(cb):
-	cb(JacquesMod())
+	cb(DashaMod())
 	
-class JacquesMod(loader.Module):
+class DashaMod(loader.Module):
 	"""Дашанизатор"""
 	strings = {
 		'name': 'Дашанизатор',
@@ -25,7 +25,7 @@ class JacquesMod(loader.Module):
 		self._client = client
 		self.me = await client.get_me()
 		
-	async def jcmd(self, message):
+	async def ddcmd(self, message):
 		""".dd <реплай на сообщение/свой текст>"""
 		
 		ufr = requests.get("https://github.com/LaciaMemeFrame/FTG-Modules/blob/master/open-sans.ttf?raw=true")
