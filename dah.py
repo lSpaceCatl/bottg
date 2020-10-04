@@ -54,7 +54,7 @@ class DashaMod(loader.Module):
 		draw = ImageDraw.Draw(img)
 		font = ImageFont.truetype(io.BytesIO(f), 32, encoding='UTF-8')
 		w, h = draw.multiline_textsize(t, font=font)
-		imtext = Image.new("RGBA", (w+10, h+10), (0, 0,0,0))
+		imtext = Image.new("RGBA", (w+7, h+10), (0, 0,0,0))
 		draw = ImageDraw.Draw(imtext)
 		draw.multiline_text((10, 10),t,(0,0,0),font=font, align='left')
 		imtext.thumbnail((850, 1200))
